@@ -56,7 +56,6 @@ int power_hint_override(struct power_module *module, power_hint_t hint, void *da
         {
             int resources[] = {0x702, 0x20B, 0x30B};
             int duration = 3000;
-
             interaction(duration, sizeof(resources)/sizeof(resources[0]), resources);
             return HINT_HANDLED;
         }
