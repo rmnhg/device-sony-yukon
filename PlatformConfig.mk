@@ -32,13 +32,12 @@ BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
 BOARD_RAMDISK_OFFSET     := 0x02000000
 
 TARGET_KERNEL_SOURCE := kernel/sony/msm8226
+KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
 
 BOARD_KERNEL_CMDLINE += console=ttyHSL0,115200,n8
-BOARD_KERNEL_CMDLINE += vmalloc=300M
 BOARD_KERNEL_CMDLINE += user_debug=31 androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x3F ehci-hcd.park=3
 BOARD_KERNEL_CMDLINE += dwc3.maximum_speed=high dwc3_msm.prop_chg_detect=Y
-BOARD_KERNEL_CMDLINE += coherent_pool=8M
 BOARD_KERNEL_CMDLINE += sched_enable_power_aware=1
 
 BOARD_KERNEL_BOOTIMG := true
@@ -80,8 +79,16 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
-TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
+TARGET_NEEDS_PLATFORM_TEXTRELS := true
 TARGET_HAS_LEGACY_CAMERA_HAL1 := true
+
+# Use device's audio_effects.conf
+TARGET_USE_DEVICE_AUDIO_EFFECTS_CONF := true
+
+# CAF
+TARGET_QCOM_AUDIO_VARIANT := caf-msm8974
+TARGET_QCOM_DISPLAY_VARIANT := caf-msm8974
+TARGET_QCOM_MEDIA_VARIANT := caf-msm8974
 
 # GPS definitions for Qualcomm solution
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
@@ -112,7 +119,7 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 
 # NFC
-BOARD_NFC_CHIPSET := pn547
+BOARD_NFC_CHIPSET := PN547C2
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
@@ -135,7 +142,7 @@ DEVICE_PACKAGE_OVERLAYS += device/sony/yukon/overlay
 # System Props
 TARGET_SYSTEM_PROP += device/sony/yukon/system.prop
 
- # SELinux
+# SELinux
 include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += device/sony/yukon/sepolicy

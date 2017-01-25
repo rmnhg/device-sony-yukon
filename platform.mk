@@ -16,11 +16,6 @@ SOMC_PLATFORM := yukon
 
 SONY_ROOT:= device/sony/yukon/rootdir
 
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
-    ro.product.model \
-    ro.product.name \
-    ro.build.product
-
 # Common init
 PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/init.common.rc:root/init.common.rc \
@@ -30,7 +25,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
     $(SONY_ROOT)/system/etc/media_codecs.xml:system/etc/media_codecs.xml \
-    $(SONY_ROOT)/system/etc/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
     $(SONY_ROOT)/system/etc/media_profiles.xml:system/etc/media_profiles.xml \
     $(SONY_ROOT)/system/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
@@ -136,7 +130,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     qcom.fmradio \
     libqcomfm_jni \
-    FM2 \
     FMRecord
 
 # GFX
@@ -173,7 +166,8 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwpa_client \
     wpa_supplicant \
-    wpa_supplicant.conf
+    wpa_supplicant.conf \
+    wcnss_service
 
 # CAMERA
 PRODUCT_PACKAGES += \
@@ -185,22 +179,17 @@ PRODUCT_PACKAGES += \
 
 # Snap
 PRODUCT_PACKAGES += \
-    Snap
+    SnapdragonCamera
 
 # OSS
 PRODUCT_PACKAGES += \
     timekeep \
     TimeKeep \
-    thermanager \
     macaddrsetup
 
 # QCOM OSS
 PRODUCT_PACKAGES += \
    librmnetctl
-
-# Charger
-PRODUCT_PACKAGES += \
-    charger_res_images
 
 # AOSP Packages
 PRODUCT_PACKAGES += \
@@ -217,10 +206,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full
 
-# ExtendedSettings
-PRODUCT_PACKAGES += \
-    ExtendedSettings
-
 # For android_filesystem_config.h
 PRODUCT_PACKAGES += \
     fs_config_files
@@ -229,6 +214,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     InCallUI \
     Stk
+
+# Omni custom config
+$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/omni/config/gsm.mk)
+
 
 # Include QCOM proprietary
 $(call inherit-product-if-exists, vendor/qcom/proprietary/proprietary.mk)
