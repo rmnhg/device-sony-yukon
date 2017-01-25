@@ -119,7 +119,7 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 
 # NFC
-BOARD_NFC_CHIPSET := PN547C2
+NXP_CHIP_TYPE := $(PN547C2)
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
