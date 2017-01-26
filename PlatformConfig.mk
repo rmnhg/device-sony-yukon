@@ -99,6 +99,13 @@ TARGET_NO_RPC := true
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 
+# Healthd
+HEALTHD_FORCE_BACKLIGHT_CONTROL := true
+HEALTHD_ENABLE_TRICOLOR_LED := true
+RED_LED_PATH := /sys/class/leds/led:rgb_red/brightness
+GREEN_LED_PATH := /sys/class/leds/led:rgb_green/brightness
+BLUE_LED_PATH := /sys/class/leds/led:rgb_blue/brightness
+
 # Wi-Fi definitions for Qualcomm solution
 BOARD_HAS_QCOM_WLAN := true
 BOARD_HOSTAPD_DRIVER := NL80211
