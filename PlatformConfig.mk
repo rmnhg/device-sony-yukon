@@ -95,13 +95,11 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
 BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 TARGET_NO_RPC := true
 
-# Charger
+# Charger/ Healthd
 BOARD_CHARGER_ENABLE_SUSPEND := true
-BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
-
-# Healthd
 HEALTHD_FORCE_BACKLIGHT_CONTROL := true
 HEALTHD_ENABLE_TRICOLOR_LED := true
+BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 RED_LED_PATH := /sys/class/leds/led:rgb_red/brightness
 GREEN_LED_PATH := /sys/class/leds/led:rgb_green/brightness
 BLUE_LED_PATH := /sys/class/leds/led:rgb_blue/brightness
