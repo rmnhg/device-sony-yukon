@@ -1,1 +1,2 @@
 persist.sys.timeadjust     u:object_r:timekeep_prop:s0
+ro.adb.secure              u:object_r:adbsecure_prop:s0

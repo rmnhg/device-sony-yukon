@@ -1,1 +1,4 @@
 set_prop(system_app, timekeep_prop)
+
+# Settings app wants to read ro.adb.secure
+get_prop(system_app, adbsecure_prop)
