@@ -130,7 +130,7 @@ PRODUCT_PACKAGES += \
     qcom.fmradio \
     libqcomfm_jni \
     FMRecord \
-    #FM2
+    FM2
 
 
 # GFX
