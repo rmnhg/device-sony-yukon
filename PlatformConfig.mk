@@ -142,7 +142,5 @@ DEVICE_PACKAGE_OVERLAYS += device/sony/yukon/overlay
 TARGET_SYSTEM_PROP += device/sony/yukon/system.prop
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
-
 BOARD_SEPOLICY_DIRS += device/sony/yukon/sepolicy
 
