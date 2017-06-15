@@ -1,0 +1,11 @@
+#Address denial logs for drm server accessing firmware file
+r_dir_file(drmserver, firmware_file)
+
+#Address denial logs for drm server accessing qseecom driver
+allow drmserver tee_device:chr_file rw_file_perms;
+
+#Access to media files for testing
+userdebug_or_eng(`
+  allow drmserver display_test_media_file:dir r_dir_perms;
+  allow drmserver display_test_media_file:file r_file_perms;
+')
