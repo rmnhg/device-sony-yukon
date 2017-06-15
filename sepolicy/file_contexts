@@ -19,10 +19,6 @@
 /dev/block/platform/msm_sdcc\.1/by-name/apps_log               u:object_r:misc_block_device:s0
 /dev/block/bootdevice/by-name/apps_log                         u:object_r:misc_block_device:s0
 
-/dev/block/mmcblk0p15                                          u:object_r:persist_block_device:s0
-/dev/block/platform/msm_sdcc\.1/by-name/persist                u:object_r:persist_block_device:s0
-/dev/block/bootdevice/by-name/persist                          u:object_r:persist_block_device:s0
-
 ###################################
 # Dev socket nodes
 #
