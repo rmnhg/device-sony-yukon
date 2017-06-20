@@ -36,3 +36,5 @@ allow init bt_firmware_file:dir { mounton };
 dontaudit init sysfs:dir write;
 
 # From unification
+allow init debugfs:file w_file_perms;
+allow init wcnss_device:chr_file w_file_perms;
