@@ -68,7 +68,6 @@ ro.bt.bdaddr_path=/data/misc/bluetooth/bluetooth_bdaddr
 ro.nfc.port=I2C
 
 # Camera
-media.stagefright.legacyencoder=true
 media.stagefright.codecremote=false
 camera2.portability.force_api=1
 persist.camera.HAL3.enabled=0

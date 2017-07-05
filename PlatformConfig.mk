@@ -34,7 +34,7 @@ BOARD_RAMDISK_OFFSET     := 0x02000000
 TARGET_KERNEL_SOURCE := kernel/sony/msm8226
 
 BOARD_KERNEL_CMDLINE += console=ttyHSL0,115200,n8
-BOARD_KERNEL_CMDLINE += user_debug=31 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += user_debug=31 androidboot.selinux=enforcing
 BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x3F ehci-hcd.park=3
 BOARD_KERNEL_CMDLINE += dwc3.maximum_speed=high dwc3_msm.prop_chg_detect=Y
 BOARD_KERNEL_CMDLINE += sched_enable_power_aware=1
@@ -76,11 +76,6 @@ AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
 BOARD_HAVE_QCOM_FM := true
 AUDIO_FEATURE_ENABLED_FM := true
 TARGET_QCOM_NO_FM_FIRMWARE := true
-
-# Camera
-USE_DEVICE_SPECIFIC_CAMERA := true
-TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
-TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
 # GPS definitions for Qualcomm solution
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
