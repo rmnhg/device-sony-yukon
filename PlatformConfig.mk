@@ -81,7 +81,6 @@ BOARD_DISABLE_FMRADIO_LIBJNI := true
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
-TARGET_NEEDS_PLATFORM_TEXTRELS := true
 TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
 # Use device's audio_effects.conf
