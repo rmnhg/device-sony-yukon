@@ -138,3 +138,6 @@ ro.vendor.extension_library=/system/vendor/lib/libqti-perfd-client.so
 
 # Widevine
 DEVICE_PROVISIONED=1
+
+# Show SELinux status
+ro.build.selinux=1
