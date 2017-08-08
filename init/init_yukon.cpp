@@ -165,7 +165,7 @@ void vendor_load_properties()
             property_set("persist.radio.multisim.config", "dsds");
             property_set("persist.radio.dont_use_dsd", "true");
             property_set("persist.radio.plmn_name_cmp", "1");
-         } else {
+        } else if (model == "2243") {
             /* D2243 (Xperia E3 LTE) */
             property_set("ro.product.model", "Xperia E3");
             property_set("ro.product.device", "D2243");
@@ -173,6 +173,11 @@ void vendor_load_properties()
             property_set("ro.telephony.default_network", "9");
             property_set("persist.radio.multisim.config", "");
             property_set("telephony.lteOnGsmDevice", "1");
+         } else {
+            /* Recovery */
+            property_set("ro.product.model", "Xperia E3");
+            property_set("ro.product.device", "flamingo");
+            property_set("ro.build.product", "flamingo");
         }
     }    
 
