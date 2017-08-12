@@ -179,6 +179,47 @@ void vendor_load_properties()
             property_set("ro.product.device", "flamingo");
             property_set("ro.build.product", "flamingo");
         }
+    } else if (hardware == "tianchi") {
+        if (model == "5303") {
+            /* D5303 (Xperia T2 Ultra LTE) */
+            property_set("ro.product.model", "Xperia T2 Ultra");
+            property_set("ro.product.device", "D5303");
+            property_set("ro.build.product", "D5303");
+            property_set("ro.telephony.default_network", "9");
+            property_set("persist.radio.multisim.config", "");
+            property_set("telephony.lteOnGsmDevice", "1");
+        } else if (model == "5306") {
+            /* D5306 (Xperia T2 Ultra LTE) */
+            property_set("ro.product.model", "Xperia T2 Ultra");
+            property_set("ro.product.device", "D5306");
+            property_set("ro.build.product", "D5306");
+            property_set("ro.telephony.default_network", "9");
+            property_set("persist.radio.multisim.config", "");
+            property_set("telephony.lteOnGsmDevice", "1");
+        } else if (model == "5316") {
+            /* D5316 (Xperia T2 Ultra LTE) */
+            property_set("ro.product.model", "Xperia T2 Ultra");
+            property_set("ro.product.device", "D5316");
+            property_set("ro.build.product", "D5316");
+            property_set("ro.telephony.default_network", "9");
+            property_set("persist.radio.multisim.config", "");
+            property_set("telephony.lteOnGsmDevice", "1");
+        } else if (model == "5322") {
+            /* D5322 (Xperia E3 Dual) */
+            property_set("ro.product.model", "Xperia T2 Ultra Dual");
+            property_set("ro.product.device", "D5322");
+            property_set("ro.build.product", "D5322");
+            property_set("ro.telephony.default_network", "9");
+            property_set("ro.telephony.ril.config", "simactivation");
+            property_set("persist.radio.multisim.config", "dsds");
+            property_set("persist.radio.dont_use_dsd", "true");
+            property_set("persist.radio.plmn_name_cmp", "1");
+         } else {
+            /* Recovery */
+            property_set("ro.product.model", "Xperia T2 Ultra");
+            property_set("ro.product.device", "tianchi");
+            property_set("ro.build.product", "tianchi");
+        }
     }    
 
     device = property_get("ro.product.device");
