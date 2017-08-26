@@ -17,6 +17,7 @@ TARGET_NO_BOOTLOADER := true
 TARGET_NO_RECOVERY := false
 TARGET_NO_KERNEL := false
 
+PRODUCT_VENDOR_KERNEL_HEADERS := device/sony/yukon/kernel-headers
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_BOARD_PLATFORM := msm8226
