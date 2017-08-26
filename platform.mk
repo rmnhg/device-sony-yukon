@@ -217,10 +217,5 @@ PRODUCT_PACKAGES += \
     InCallUI \
     Stk
 
-# Omni custom config
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
-
-
 # Include QCOM proprietary
 $(call inherit-product-if-exists, vendor/qcom/proprietary/proprietary.mk)
