@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2013, The Linux Foundation. All rights reserved.
+Copyright (c) 2017, The Linux Foundation. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -164,10 +164,10 @@ void vendor_load_properties()
             /* D2203 (Xperia E3 LTE) */
             property_set("ro.product.model", "Xperia E3");
             property_set("ro.product.name", "D2203");
-            property_set("ro.build.description", "D2203-user 4.4.4 18.5.C.0.25 5n9_bQ release-keys");
-            property_set("ro.build.fingerprint", "Sony/D2203/D2203:4.4.4/18.5.C.0.25/5n9_bQ:user/release-keys");
             property_set("ro.product.device", "D2203");
             property_set("ro.build.product", "D2203");
+            property_set("ro.build.description", "D2203-user 4.4.4 18.5.C.0.25 5n9_bQ release-keys");
+            property_set("ro.build.fingerprint", "Sony/D2203/D2203:4.4.4/18.5.C.0.25/5n9_bQ:user/release-keys");
             property_set("ro.telephony.default_network", "9");
             property_set("persist.radio.multisim.config", "");
             property_set("telephony.lteOnGsmDevice", "1");
@@ -218,6 +218,8 @@ void vendor_load_properties()
             property_set("ro.product.model", "Xperia T2 Ultra");
             property_set("ro.product.device", "D5303");
             property_set("ro.build.product", "D5303");
+            property_set("ro.build.description", "D5303-user 4.4.3 19.1.1.A.0.165 Wv93Zw release-keys");
+            property_set("ro.build.fingerprint", "Sony/D5303/D5303:4.4.3/19.1.1.A.0.165/Wv93Zw:user/release-keys");
             property_set("ro.telephony.default_network", "9");
             property_set("persist.radio.multisim.config", "");
             property_set("telephony.lteOnGsmDevice", "1");
@@ -226,6 +228,8 @@ void vendor_load_properties()
             property_set("ro.product.model", "Xperia T2 Ultra");
             property_set("ro.product.device", "D5306");
             property_set("ro.build.product", "D5306");
+            property_set("ro.build.description", "D5306-user 4.4.3 19.1.1.A.0.165 Wv93Zw release-keys");
+            property_set("ro.build.fingerprint", "Sony/D5306/D5306:4.4.3/19.1.1.A.0.165/Wv93Zw:user/release-keys");
             property_set("ro.telephony.default_network", "9");
             property_set("persist.radio.multisim.config", "");
             property_set("telephony.lteOnGsmDevice", "1");
@@ -234,14 +238,18 @@ void vendor_load_properties()
             property_set("ro.product.model", "Xperia T2 Ultra");
             property_set("ro.product.device", "D5316");
             property_set("ro.build.product", "D5316");
+            property_set("ro.build.description", "D5316-user 4.4.3 19.1.1.A.0.165 Wv93Zw release-keys");
+            property_set("ro.build.fingerprint", "Sony/D5316/D5316:4.4.3/19.1.1.A.0.165/Wv93Zw:user/release-keys");
             property_set("ro.telephony.default_network", "9");
             property_set("persist.radio.multisim.config", "");
             property_set("telephony.lteOnGsmDevice", "1");
         } else if (model == "5322") {
-            /* D5322 (Xperia E3 Dual) */
+            /* D5322 (Xperia T2 Ultra Dual) */
             property_set("ro.product.model", "Xperia T2 Ultra Dual");
             property_set("ro.product.device", "D5322");
             property_set("ro.build.product", "D5322");
+            property_set("ro.build.description", "D5322-user 4.4.3 19.1.1.A.0.165 Wv93Zw release-keys");
+            property_set("ro.build.fingerprint", "Sony/D5322/D5322:4.4.3/19.1.1.A.0.165/Wv93Zw:user/release-keys");
             property_set("ro.telephony.default_network", "9");
             property_set("ro.telephony.ril.config", "simactivation");
             property_set("persist.radio.multisim.config", "dsds");
@@ -252,6 +260,41 @@ void vendor_load_properties()
             property_set("ro.product.model", "Xperia T2 Ultra");
             property_set("ro.product.device", "tianchi");
             property_set("ro.build.product", "tianchi");
+    } else if (hardware == "seagull") {
+        if (model == "5102") {
+            /* D5102 (Xperia T3 3G) */
+            property_set("ro.product.model", "Xperia T3 3G");
+            property_set("ro.product.device", "D5102");
+            property_set("ro.build.product", "D5102");
+            property_set("ro.build.description", "D5102-user 4.4.2 18.1.A.1.21 6vt_bw release-keys");
+            property_set("ro.build.fingerprint", "Sony/D5102/D5102:4.4.2/18.1.A.1.21/6vt_bw:user/release-keys");
+            property_set("ro.telephony.default_network", "0");
+            property_set("persist.radio.multisim.config", "");
+        } else if (model == "5103") {
+            /* D5103 (Xperia T3 LTE) */
+            property_set("ro.product.model", "Xperia T3");
+            property_set("ro.product.device", "D5103");
+            property_set("ro.build.product", "D5103");
+            property_set("ro.build.description", "D5103-user 4.4.2 18.1.A.1.21 6vt_bw release-keys");
+            property_set("ro.build.fingerprint", "Sony/D5103/D5103:4.4.2/18.1.A.1.21/6vt_bw:user/release-keys");
+            property_set("ro.telephony.default_network", "9");
+            property_set("persist.radio.multisim.config", "");
+            property_set("telephony.lteOnGsmDevice", "1");
+        } else if (model == "5106") {
+            /* D5106 (Xperia T3 LTE) */
+            property_set("ro.product.model", "Xperia T3");
+            property_set("ro.product.device", "D5106");
+            property_set("ro.build.product", "D5106");
+            property_set("ro.build.description", "D5106-user 4.4.2 18.1.A.1.21 6vt_bw release-keys");
+            property_set("ro.build.fingerprint", "Sony/D5106/D5106:4.4.2/18.1.A.1.21/6vt_bw:user/release-keys");
+            property_set("ro.telephony.default_network", "9");
+            property_set("persist.radio.multisim.config", "");
+            property_set("telephony.lteOnGsmDevice", "1");
+        } else {
+            /* Recovery */
+            property_set("ro.product.model", "Xperia T3");
+            property_set("ro.product.device", "seagull");
+            property_set("ro.build.product", "seagull");
         }
     }    
 
