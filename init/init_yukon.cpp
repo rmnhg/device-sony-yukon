@@ -164,10 +164,10 @@ void vendor_load_properties()
             /* D2203 (Xperia E3 LTE) */
             property_set("ro.product.model", "Xperia E3");
             property_set("ro.product.name", "D2203");
-            property_set("ro.build.description", "D2203-user 4.4.4 18.5.C.0.25 5n9_bQ release-keys");
-            property_set("ro.build.fingerprint", "Sony/D2203/D2203:4.4.4/18.5.C.0.25/5n9_bQ:user/release-keys");
             property_set("ro.product.device", "D2203");
             property_set("ro.build.product", "D2203");
+            property_set("ro.build.description", "D2203-user 4.4.4 18.5.C.0.25 5n9_bQ release-keys");
+            property_set("ro.build.fingerprint", "Sony/D2203/D2203:4.4.4/18.5.C.0.25/5n9_bQ:user/release-keys");
             property_set("ro.telephony.default_network", "9");
             property_set("persist.radio.multisim.config", "");
             property_set("telephony.lteOnGsmDevice", "1");
