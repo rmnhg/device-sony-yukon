@@ -260,6 +260,7 @@ void vendor_load_properties()
             property_set("ro.product.model", "Xperia T2 Ultra");
             property_set("ro.product.device", "tianchi");
             property_set("ro.build.product", "tianchi");
+        }
     } else if (hardware == "seagull") {
         if (model == "5102") {
             /* D5102 (Xperia T3 3G) */
