@@ -1,7 +1,7 @@
 #!/system/bin/sh
-# Copyright (c) 2010-2013, The Linux Foundation. All rights reserved.
-# Copyright (c) 2013 Sony Mobile Communications AB.
-# Copyright (c) 2014 FreeXperia Project.
+# Copyright (c) 2010-2018, The Linux Foundation. All rights reserved.
+# Copyright (c) 2018-2018 Sony Mobile Communications AB.
+# Copyright (c) 2018-2018 FreeXperia Project.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
