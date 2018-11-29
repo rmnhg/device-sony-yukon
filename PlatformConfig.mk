@@ -16,7 +16,7 @@
 include device/sony/qcom-common/BoardConfigCommon.mk
 
 # Inherit from Sony common
-include device/sony/common/PlatformConfig.mk
+include device/sony/common/BoardConfigCommon.mk
 
 TARGET_SPECIFIC_HEADER_PATH += device/sony/yukon/include
 
