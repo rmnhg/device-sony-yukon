@@ -46,10 +46,6 @@ PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/system/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
     $(SONY_ROOT)/system/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf
 
-# Qualcom BT
-PRODUCT_COPY_FILES += \
-    $(SONY_ROOT)/system/etc/init.qcom.bt.sh:system/etc/init.qcom.bt.sh
-
 # Yukon etc
 PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/system/etc/gps.conf:system/etc/gps.conf \
