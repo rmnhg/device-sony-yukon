@@ -160,18 +160,6 @@ void vendor_load_properties()
             property_set("ro.build.fingerprint", "Sony/D2202/D2202:4.4.4/18.5.C.0.25/5n9_bQ:user/release-keys");
             property_set("ro.telephony.default_network", "0");
             property_set("persist.radio.multisim.config", "");
-            property_set("ro.semc.version.cust", "1289-2939");
-            property_set("ro.semc.version.cust_revision", "R2B");
-            property_set("ro.semc.version.fs_revision", "18.5.A.0.26");
-            property_set("ro.semc.product.model", "D2202");
-            property_set("ro.semc.ms_type_id", "PM-0381-BV");
-            property_set("ro.semc.version.fs", "GLOBAL-HSPA");
-            property_set("ro.semc.product.name", "Xperia E3");
-            property_set("ro.semc.product.device", "D22");
-            property_set("ro.semc.version.sw", "1289-2939");
-            property_set("ro.semc.version.sw_revision", "18.5.A.0.26");
-            property_set("ro.semc.version.sw_variant", "GENERICSS-HSPA");
-            property_set("ro.semc.version.sw_type", "user");
         } else if (model == "2203") {
             /* D2203 (Xperia E3 LTE) */
             property_set("ro.product.model", "Xperia E3");
@@ -183,18 +171,6 @@ void vendor_load_properties()
             property_set("ro.telephony.default_network", "9");
             property_set("persist.radio.multisim.config", "");
             property_set("telephony.lteOnGsmDevice", "1");
-            property_set("ro.semc.version.cust", "1287-8693");
-            property_set("ro.semc.version.cust_revision", "R7B");
-            property_set("ro.semc.version.fs_revision", "18.5.C.0.25");
-            property_set("ro.semc.product.model", "D2203");
-            property_set("ro.semc.ms_type_id", "PM-0380-BV");
-            property_set("ro.semc.version.fs", "GLOBAL-LTE");
-            property_set("ro.semc.product.name", "Xperia E3");
-            property_set("ro.semc.product.device", "D22");
-            property_set("ro.semc.version.sw", "1287-8693");
-            property_set("ro.semc.version.sw_revision", "18.5.C.0.25");
-            property_set("ro.semc.version.sw_variant", "GENERICSS-LTE");
-            property_set("ro.semc.version.sw_type", "user");
         } else if (model == "2206") {
             /* D2206 (Xperia E3 LTE) */
             property_set("ro.product.model", "Xperia E3");
@@ -206,18 +182,6 @@ void vendor_load_properties()
             property_set("ro.telephony.default_network", "9");
             property_set("persist.radio.multisim.config", "");
             property_set("telephony.lteOnGsmDevice", "1");
-            property_set("ro.semc.version.cust", "1289-2879");
-            property_set("ro.semc.version.cust_revision", "R2B");
-            property_set("ro.semc.version.fs_revision", "18.5.C.0.19");
-            property_set("ro.semc.product.model", "D2206");
-            property_set("ro.semc.ms_type_id", "PM-0380-BV");
-            property_set("ro.semc.version.fs", "GLOBAL-LTE");
-            property_set("ro.semc.product.name", "Xperia E3");
-            property_set("ro.semc.product.device", "D22");
-            property_set("ro.semc.version.sw", "1289-2879");
-            property_set("ro.semc.version.sw_revision", "18.5.C.0.19");
-            property_set("ro.semc.version.sw_variant", "GENERICSS-LTE");
-            property_set("ro.semc.version.sw_type", "user");
         } else if (model == "2212") {
             /* D2212 (Xperia E3 Dual) */
             property_set("ro.product.model", "Xperia E3 Dual");
@@ -231,18 +195,6 @@ void vendor_load_properties()
             property_set("persist.radio.multisim.config", "dsds");
             property_set("persist.radio.dont_use_dsd", "true");
             property_set("persist.radio.plmn_name_cmp", "1");
-            property_set("ro.semc.version.cust", "1287-8384");
-            property_set("ro.semc.version.cust_revision", "R8B");
-            property_set("ro.semc.version.fs_revision", "18.5.B.0.26");
-            property_set("ro.semc.product.model", "D2212");
-            property_set("ro.semc.ms_type_id", "PM-0381-BV");
-            property_set("ro.semc.version.fs", "GLOBAL-HSPA");
-            property_set("ro.semc.product.name", "Xperia E3");
-            property_set("ro.semc.product.device", "D22");
-            property_set("ro.semc.version.sw", "1287-8384");
-            property_set("ro.semc.version.sw_revision", "18.5.B.0.26");
-            property_set("ro.semc.version.sw_variant", "GENERICDS-HSPA");
-            property_set("ro.semc.version.sw_type", "user");
          } else if (model == "2243" ) {
             /* D2243 (Xperia E3 LTE) */
             property_set("ro.product.model", "Xperia E3");
@@ -254,18 +206,6 @@ void vendor_load_properties()
             property_set("ro.telephony.default_network", "9");
             property_set("persist.radio.multisim.config", "");
             property_set("telephony.lteOnGsmDevice", "1");
-            property_set("ro.semc.version.cust", "1288-9720");
-            property_set("ro.semc.version.cust_revision", "R8B");
-            property_set("ro.semc.version.fs_revision", "18.5.C.0.25");
-            property_set("ro.semc.product.model", "D2243");
-            property_set("ro.semc.ms_type_id", "PM-0385-BV");
-            property_set("ro.semc.version.fs", "DTV-LTE");
-            property_set("ro.semc.product.name", "Xperia E3");
-            property_set("ro.semc.product.device", "D22");
-            property_set("ro.semc.version.sw", "1287-8693");
-            property_set("ro.semc.version.sw_revision", "18.5.C.0.25");
-            property_set("ro.semc.version.sw_variant", "GENERICSS-LTE");
-            property_set("ro.semc.version.sw_type", "user");
         } else {
             /* Recovery */
             property_set("ro.product.model", "Xperia E3");
